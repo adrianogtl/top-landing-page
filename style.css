@@ -1,0 +1,135 @@
+:root {
+  counter-reset: ol;
+  --font-color: #fff;
+  --bg-color: #122426;
+  --accent-color: #7544a7;
+  --border-radius: 10px;
+
+  --transition-time-type: 0.3s ease-in-out;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Roboto, sans-serif;
+  font-size: 1.3rem;
+  background-image: url(img/background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.centered {
+  width: clamp(50%, 70%, 90%);
+  margin: 0 auto;
+}
+
+.colored {
+  color: var(--accent-color);
+}
+
+.header {
+  color: var(--font-color);
+  background-color: var(--bg-color);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.nav .logo {
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  list-style-type: none;
+}
+
+.nav ul a {
+  color: unset;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color var(--transition-time-type);
+
+  &:hover {
+    color: var(--accent-color);
+  }
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.hero-text {
+  flex: 1;
+  padding: 1rem;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  text-transform: capitalize;
+}
+
+.hero-text p {
+  padding: 1rem 0;
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+.hero-text button {
+  margin: 1rem;
+  padding: 0.5rem 2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--font-color);
+  background-color: var(--accent-color);
+  border: none;
+  border-radius: var(--border-radius);
+  transition: background-color var(--transition-time-type);
+
+  &:hover {
+    --accent-color: #621da8;
+    background-color: var(--accent-color);
+    cursor: pointer;
+  }
+}
+
+.hero-img {
+  width: clamp(300px, 500px, 100%);
+  border-radius: var(--border-radius);
+}
+
+@media (max-width: 768px) {
+  .centered {
+    width: 90%;
+  }
+
+  .hero-text {
+    text-align: center;
+  }
+
+  .hero-text button {
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
+  }
+}
