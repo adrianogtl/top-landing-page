@@ -4,12 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Better Business</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
     <section class="header">
       <nav class="nav centered">
-        <div class="logo"><span class="colored">Better</span> business</div>
+        <div class="logo">
+          <span class="text-primary">Better</span> business
+        </div>
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
@@ -18,14 +21,52 @@
       </nav>
       <div class="hero centered">
         <div class="hero-text">
-          <h1>Implementing sustainable strategies for your business</h1>
+          <h1>
+            Implementing
+            <span class="text-primary">sustainable</span> strategies for your
+            <span class="text-accent">business</span>
+          </h1>
           <p>
             Sign up for our newsletter to receive exclusive updates, special
             offers, and valuable insights delivered straight to your inbox!
           </p>
           <button type="button">Sign up</button>
         </div>
-        <img class="hero-img" src="img/hero-img.jpg" width="600" alt="" />
+        <div class="hero-img">
+          <img
+            src="assets/img/hero-img.jpg"
+            width="600"
+            alt="Person holding pencil near laptop computer"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="info centered">
+      <div class="info-cards">
+        <div class="card">
+          <img src="assets/img/customer-service.jpg" alt="" width="300" />
+          <div>
+            <span>Provide excellent customer service</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/img/feedback.jpg" alt="" width="300" />
+          <div>
+            <span>Listen to feedback</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/img/employee-development.jpg" alt="" width="300" />
+          <div>
+            <span>Invest in employee training and development</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/img/innovation.jpg" alt="" width="300" />
+          <div>
+            <span>Embrace innovation</span>
+          </div>
+        </div>
       </div>
     </section>
   </body>
