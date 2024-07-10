@@ -5,12 +5,14 @@
   --selective-yellow: #ffba08ff;
 
   --font-color: #fff;
+  --font-color2: #808080;
   --primary-color: var(--selective-yellow);
   --bg-color: var(--prussian-blue);
   --accent-color: var(--engineering-orange);
 
   --border-radius: 10px;
-  --shadow-bottom: 0px 2px 8px 5px rgba(0, 0, 0, 0.25);
+  --shadow-top: 0px -2px 8px 3px rgba(0, 0, 0, 0.25);
+  --shadow-bottom: 0px 2px 8px 3px rgba(0, 0, 0, 0.25);
   --shadow-right-bottom: 2px 2px 2px rgba(0, 0, 0, 0.25);
   --transition: 0.3s ease-in-out;
 }
@@ -180,7 +182,7 @@ h2 {
   flex-wrap: wrap;
   gap: 2rem;
   padding: 2rem 0;
-  color: gray;
+  color: var(--font-color2);
 }
 
 .profile {
@@ -208,6 +210,15 @@ h2 {
     content: '"';
     font-size: 5rem;
   }
+}
+
+/* Footer section */
+
+.footer {
+  padding: 2rem 1rem;
+  text-align: center;
+  background-color: var(--bg-color);
+  box-shadow: var(--shadow-top);
 }
 
 @media (max-width: 1250px) {
