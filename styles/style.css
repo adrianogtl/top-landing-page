@@ -173,6 +173,43 @@ h2 {
   font-size: 1.2rem;
 }
 
+/* Quote section */
+
+.quote-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem 0;
+  color: gray;
+}
+
+.profile {
+  margin: 0 auto;
+}
+
+.profile img {
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: var(--shadow-right-bottom);
+}
+
+.profile h3 {
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.quote {
+  flex: 1 0;
+  padding: 1rem;
+  font-style: italic;
+  font-size: 2rem;
+
+  &::before {
+    content: '"';
+    font-size: 5rem;
+  }
+}
+
 @media (max-width: 1250px) {
   .centered {
     width: 90%;
